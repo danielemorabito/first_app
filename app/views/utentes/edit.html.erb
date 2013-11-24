@@ -1,0 +1,20 @@
+<h1>Editing utente</h1>
+
+<% form_for(@utente) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </p>
+  <p>
+    <%= f.label :cognome %><br />
+    <%= f.text_field :cognome %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @utente %> |
+<%= link_to 'Back', utentes_path %>

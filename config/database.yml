@@ -1,0 +1,20 @@
+
+login: &login
+  adapter: mysql
+  host: localhost
+  port: 3306
+  username: root
+  password: admin
+
+development:
+  database: prova
+  <<: *login
+
+test:
+  database: prova
+  <<: *login
+
+production:
+  database: prova
+  <<: *login
+

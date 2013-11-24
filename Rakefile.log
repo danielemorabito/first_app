@@ -1,0 +1,15 @@
+Questionable use of curly braces in "require(file.join(file.dirname(__file__), {config}, {boot}))"
+    Error: undefined symbol in: "[config]"
+Questionable use of curly braces in "require(file.join(file.dirname(__file__), (config), {boot}))"
+    Error: undefined symbol in: "[boot]"
+Questionable use of curly braces in "require {rake}"
+    Error: undefined symbol in: "[rake]"
+Questionable use of curly braces in "require {rake/testtask}"
+    Error: undefined symbol in: "[rake]/testtask"
+Questionable use of curly braces in "require {rake/rdoctask}"
+    Error: undefined symbol in: "[rake]/rdoctask"
+Questionable use of curly braces in "require {tasks/rails}"
+    Error: undefined symbol in: "[tasks]/rails"
+Circuit: * Add your own tasks in files placed in lib/tasks ending in .rake,
+
+Fatal Error: Multiple instances of "Require"

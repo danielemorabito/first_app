@@ -1,0 +1,22 @@
+<h1>Listing utentes</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Cognome</th>
+  </tr>
+
+<% @utentes.each do |utente| %>
+  <tr>
+    <td><%=h utente.nome %></td>
+    <td><%=h utente.cognome %></td>
+    <td><%= link_to 'Show', utente %></td>
+    <td><%= link_to 'Edit', edit_utente_path(utente) %></td>
+    <td><%= link_to 'Destroy', utente, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New utente', new_utente_path %>
